@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+    <include file="db/changelog/RECIPE_SERVICE/TABLES/USERS.sql"/>
+    <include file="db/changelog/RECIPE_SERVICE/TABLES/RECIPES.sql"/>
+    <include file="db/changelog/RECIPE_SERVICE/TABLES/INGREDIENTS.sql"/>
+    <include file="db/changelog/RECIPE_SERVICE/TABLES/RECIPE_INGREDIENTS.sql"/>
+    <include file="db/changelog/RECIPE_SERVICE/TABLES/CATEGORIES.sql"/>
+<!--    <include file="db/changelog/RECIPE_SERVICE/TABLES/data.xml"/>-->
+    <include file="db/changelog/RECIPE_SERVICE/TABLES/RECIPE_CATEGORIES.sql"/>
+    <include file="db/changelog/RECIPE_SERVICE/TABLES/REVIEWS.sql"/>
+    <include file="db/changelog/RECIPE_SERVICE/TABLES/FAVOURITES.sql"/>
+    <include file="db/changelog/RECIPE_SERVICE/TABLES/TAGS.sql"/>
+    <include file="db/changelog/RECIPE_SERVICE/TABLES/RECIPE_TAGS.sql"/>
+    <include file="db/changelog/RECIPE_SERVICE/TABLES/IMAGES.sql"/>
+    <include file="db/changelog/RECIPE_SERVICE/TABLES/RECIPE_IMAGES.sql"/>
+
+<!--  <includeAll path="db/changelog/RECIPE_SERVICE"/>-->
+</databaseChangeLog>

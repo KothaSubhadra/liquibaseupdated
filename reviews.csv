@@ -1,0 +1,11 @@
+review_id,recipe_id,user_id,rating,review
+1,1,1,4.5,good
+2,11,10,5,delious
+3,22,2,4,not too spicy
+4,33,9,4.2,flavour full dish
+5,44,3,3.5,not that great
+6,55,8,4, nice recipe
+7,66,4,5,delious
+8,77,7,5,delious
+9,88,5,4.8,its to spicy
+10,99,6,4.9,good
