@@ -10,8 +10,9 @@
 -------------------------------------------------------------
 
 -- CHANGELOG
--- DATE         USER               CHANGE ID        COMMENT
---07-06-2023
+-- DATE                 USER               CHANGE ID        COMMENT
+-- 07-07-2023           SUBHADRA            1               INITIAL VERSION
+-- 13-07-2023           SUBHADRA            2               LOADING DATA
 
 --------------------------------------------------------------
 
@@ -25,4 +26,4 @@ CREATE TABLE IF NOT EXISTS CATEGORIES (
 
 -- changeset TABLE_CATEGORIES:2
 COPY CATEGORIES(CATEGORY_ID,CATEGORY_NAME)
-FROM 'D:\Users\ksubhadra\SpringInitializer\Liquibase\categories.csv' DELIMITER ',' CSV HEADER;
+FROM '${CSV_FOLDER_PATH}categories.csv' DELIMITER ',' CSV HEADER;

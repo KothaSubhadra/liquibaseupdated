@@ -9,9 +9,11 @@
 
 -------------------------------------------------------------
 
--- CHANGELOG
--- DATE         USER               CHANGE ID        COMMENT
---07-06-2023
+--- CHANGELOG
+-- DATE                 USER               CHANGE ID        COMMENT
+-- 07-07-2023           SUBHADRA            1               INITIAL VERSION
+-- 13-07-2023           SUBHADRA            2               LOADING DATA
+
 
 --------------------------------------------------------------
 
@@ -41,7 +43,7 @@ CREATE TABLE IF NOT EXISTS RECIPES (
 
 -- changeset TABLE_RECIPES:2
 COPY recipes(RECIPE_ID,RECIPE_TITLE,DESCRIPTION,CUISINE,DIETARY_RESTRICTION,COOKING_TIME,PREPARATION_STEPS,SERVINGS,DIFFICULTY_LEVEL,AVERAGE_RATING,USER_ID,CALORIES_PER_SERVING,ADDITIONAL_INFO)
-FROM 'D:\Users\ksubhadra\SpringInitializer\Liquibase\\recipes.csv' DELIMITER ',' CSV HEADER;
+FROM '${CSV_FOLDER_PATH}recipes.csv' DELIMITER ',' CSV HEADER;
 
 
 

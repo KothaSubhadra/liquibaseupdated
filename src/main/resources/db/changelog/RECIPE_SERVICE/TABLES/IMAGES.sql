@@ -10,8 +10,10 @@
 -------------------------------------------------------------
 
 -- CHANGELOG
--- DATE         USER               CHANGE ID        COMMENT
---07-06-2023
+-- DATE                 USER               CHANGE ID        COMMENT
+-- 07-07-2023           SUBHADRA            1               INITIAL VERSION
+-- 13-07-2023           SUBHADRA            2               LOADING DATA
+
 
 --------------------------------------------------------------
 
@@ -25,4 +27,4 @@ CREATE TABLE IF NOT EXISTS IMAGES (
 
 -- changeset TABLE_IMAGES:2
 COPY IMAGES(IMAGE_ID,IMAGE_URL)
-FROM 'D:\Users\ksubhadra\SpringInitializer\Liquibase\images.csv' DELIMITER ',' CSV HEADER;
+FROM '${CSV_FOLDER_PATH}images.csv' DELIMITER ',' CSV HEADER;

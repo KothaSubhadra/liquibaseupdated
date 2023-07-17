@@ -9,7 +9,6 @@
     <include file="db/changelog/RECIPE_SERVICE/TABLES/INGREDIENTS.sql"/>
     <include file="db/changelog/RECIPE_SERVICE/TABLES/RECIPE_INGREDIENTS.sql"/>
     <include file="db/changelog/RECIPE_SERVICE/TABLES/CATEGORIES.sql"/>
-<!--    <include file="db/changelog/RECIPE_SERVICE/TABLES/data.xml"/>-->
     <include file="db/changelog/RECIPE_SERVICE/TABLES/RECIPE_CATEGORIES.sql"/>
     <include file="db/changelog/RECIPE_SERVICE/TABLES/REVIEWS.sql"/>
     <include file="db/changelog/RECIPE_SERVICE/TABLES/FAVOURITES.sql"/>

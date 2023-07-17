@@ -10,7 +10,9 @@
 
 -- CHANGELOG
 -- DATE                 USER               CHANGE ID        COMMENT
--- 07-06-2023           SUBHADRA           1                LB2-9: INITIAL VERSION
+-- 07-07-2023           SUBHADRA            1               INITIAL VERSION
+-- 13-07-2023           SUBHADRA            2               LOADING DATA
+
 
 --------------------------------------------------------------
 
@@ -28,4 +30,4 @@ CREATE TABLE IF NOT EXISTS RECIPE_IMAGES (
 
 -- changeset TABLE_RECIPE_IMAGES:2
 COPY RECIPE_IMAGES(RECIPE_IMAGE_ID,IMAGE_ID,RECIPE_ID)
-FROM 'D:\Users\ksubhadra\SpringInitializer\Liquibase\\recipe_images.csv' DELIMITER ',' CSV HEADER;
+FROM '${CSV_FOLDER_PATH}recipe_images.csv' DELIMITER ',' CSV HEADER;

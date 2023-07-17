@@ -10,7 +10,9 @@
 
 -- CHANGELOG
 -- DATE                 USER               CHANGE ID        COMMENT
--- 07-06-2023           SUBHADRA           1                LB2-9: INITIAL VERSION
+-- 07-07-2023           SUBHADRA            1               INITIAL VERSION
+-- 13-07-2023           SUBHADRA            2               LOADING DATA
+
 
 --------------------------------------------------------------
 
@@ -28,4 +30,4 @@ CREATE TABLE IF NOT EXISTS RECIPE_CATEGORIES (
 
 -- changeset TABLE_RECIPE_CATEGORIES:2
 COPY RECIPE_CATEGORIES(RECIPE_ID, CATEGORY_ID)
-FROM 'D:\Users\ksubhadra\SpringInitializer\Liquibase\\recipe_categories.csv' DELIMITER ',' CSV HEADER;
+FROM '${CSV_FOLDER_PATH}recipe_categories.csv' DELIMITER ',' CSV HEADER;

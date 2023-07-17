@@ -8,9 +8,11 @@
 
 -------------------------------------------------------------
 
--- CHANGELOG
--- DATE                 USER               CHANGE ID        COMMENT
--- 07-06-2023           SUBHADRA           1                LB2-9: INITIAL VERSION
+--- CHANGELOG
+ -- DATE                 USER               CHANGE ID        COMMENT
+ -- 07-07-2023           SUBHADRA            1               INITIAL VERSION
+ -- 13-07-2023           SUBHADRA            2               LOADING DATA
+
 
 --------------------------------------------------------------
 
@@ -27,5 +29,5 @@ CREATE TABLE IF NOT EXISTS RECIPE_INGREDIENTS (
 
 -- changeset TABLE_RECIPE_INGREDIENTS:2
 COPY RECIPE_INGREDIENTS(RECIPE_ID,INGREDIENT_ID,QUANTITY,UNIT)
-FROM 'D:\Users\ksubhadra\SpringInitializer\Liquibase\\recipe_ingredients.CSV' DELIMITER ',' CSV HEADER;
+FROM '${CSV_FOLDER_PATH}recipe_ingredients.CSV' DELIMITER ',' CSV HEADER;
 
